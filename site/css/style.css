@@ -169,7 +169,10 @@ footer{
 
 
 .mailto{
-  text-align: center;
+    text-align: center;
+    color:#fae8e5 !important;
+    text-decoration: none;
+    font-size: 1em;
   
 }
 
