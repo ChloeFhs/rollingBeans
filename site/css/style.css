@@ -14,9 +14,6 @@ p {
     font-size: 1.2em;
 }
 
-h3:hover {
-    transform: scale(1.1);
-}
 
 /*CSS Header */
 header{
@@ -50,7 +47,6 @@ header{
 #logo:hover {
     transform: rotate(1080deg);
 }
-
 
 
 nav{
@@ -95,7 +91,7 @@ nav a:visited{
 
 
 
-/*Image du titre*/
+        /*Image du titre*/
 .title-container{
     display: flex;
     padding-top: 4em;
@@ -107,12 +103,13 @@ nav a:visited{
     width: 100%;
 
 }
+
 .title-img{
     height: 250px; 
 
 }
 
-/* CSS CARD BODY*/ 
+        /* CSS CARD BODY*/ 
 .card-container{
     padding: 3em;
     display:flex; 
@@ -147,8 +144,6 @@ footer{
     background-position: bottom;
 }
 
-
-
 .disc-container{
     display: flex;
     padding: 1.5em;
@@ -157,7 +152,6 @@ footer{
     flex-flow: column wrap;
     width: 40%;
 }  
-
 
 .contact-container{
     display: flex;
@@ -168,7 +162,6 @@ footer{
     width: 40%;
 }  
 
-
 .mailto{
     text-align: center;
     color:#fae8e5 !important;
@@ -178,6 +171,7 @@ footer{
     
   
 }
+
 .mailto :hover{
     transform: scale(1.1);
 }
@@ -199,10 +193,10 @@ footer{
     align-self: flex-end;
 
 }
+
 #logo-footer{
     width: 5em;
 }
-
 
 #disclaimer{
     text-align: center;
