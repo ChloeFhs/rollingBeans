@@ -11,7 +11,9 @@ body {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
+    color:#430c05ff;
+
 }
 
 
@@ -123,12 +125,27 @@ nav a:visited{
     width: 25%;
     border-radius: 10%;
     background-color: #fae8e5;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
 }
 
+.h3{
+    text-align: center;
+    color:#EF2D56;
+
+}
+
+.card-index {
+    text-align: center;
+}
+.img-card{
+    max-width: 14em;
+    max-height: 14em;
+}
 
 /*CSS footer */
 footer{
-    padding-bottom: 0.5em;
     display: inline-flex;
     height: 10em;
     width: 100%;
