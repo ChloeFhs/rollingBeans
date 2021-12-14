@@ -109,7 +109,6 @@ nav a:visited{
 }
 .title-img{
     height: 250px; 
-    z-index: 1;
 
 }
 
@@ -133,39 +132,41 @@ nav a:visited{
 /*CSS footer */
 footer{
     padding-bottom: 0.5em;
-    display: flex;
+    display: inline-flex;
     height: 10em;
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
+
+    justify-content: space-around;
+    align-items: flex-end;
+
+    background-image: url("../Images/footer-bg.png");
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-image: url("../Images/footer-bg.png");
-    justify-content: space-around;
-    align-items: flex-end;
 }
 
 
-.footer-container{
+
+.disc-container{
     display: flex;
     padding: 1.5em;
-    width: 30%;
     height: 90%;
-    background-color: #EF2D56;    
-    opacity: 65%;
     border-radius: 10%;
+    flex-flow: column wrap;
+    width: 40%;
 }  
 
-}
 
-.info-container{
-    opacity: 100%;
+.contact-container{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
- 
-}
+    padding: 1.5em;
+    height: 90%;
+    border-radius: 10%;
+    flex-flow: column wrap;
+    width: 40%;
+}  
 
 
 .mailto{
@@ -173,45 +174,53 @@ footer{
     color:#fae8e5 !important;
     text-decoration: none;
     font-size: 1em;
+    transition: transform .2s;
+    
   
 }
-
 .mailto :hover{
+    transform: scale(1.1);
 }
 
 .mailto a:link{
+    color:#fae8e5 !important;
+    text-decoration: none;
 
 }
 
 .mailto a:visited{
-    color: rgb(229, 249, 250);
+    color: #fae8e5; 
     text-decoration: none;
 }
 
-.logo-RB-container{
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
 
 }
 #logo-footer{
-
-
+    width: 5em;
 }
 
-.disclaimer-container{
 
-}
 #disclaimer{
+    text-align: center;
+    color: #fae8e5;
+    font-size: small;
 
 
 }
-.logo-uni-container{
 
-    
+.logo-uni-container{
+    display: flex;
+    align-self: center;
 }
 
 .img-uni{
 
+    width: 5em;
+    border-radius: 10%;
+    padding: auto;
 }
-
-.map-container{
-
 
