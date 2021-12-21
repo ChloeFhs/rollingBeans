@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Spots café</title>
+  <link rel="icon" type="png" sizes="16x16" href="../Images/logo.png">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400;1,700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -30,15 +33,58 @@
       <img src="../Images/TITLERB.png" alt="image de titre de Rolling Beans" class="title-img">
     </div>
   </header>
-  <div class="card-container">
-    <div class="card-index"></div>
-    <div class="card-index"></div>
-    <div class="card-index"></div>
-  </div>
+  <section class="card-container">
+
+    <div class="card-container">
+
+      <!--Oliviers-->
+      <div class="card-index">
+        <h3>Cafet' des Oliviers</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.793981717097!2d1.4631340151701855!3d43.56917577912432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdad5c959d4d%3A0x63395ca6c04b76ce!2sCafet&#39;%20Les%20Oliviers!5e0!3m2!1sen!2sfr!4v1640101252762!5m2!1sen!2sfr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Au pied d'une résidence universitaire et à seulement quelques pas de l'IUT Paul Sabatier, cette cafétéria
+          propose un large choix de boissons chaudes et de petits en-cas. On adore le <span> café biologique</span> que
+          l'on peut déguster à tarif étudiant.</p>
+        <h6>Infos</h6>
+        <ul class="info-list">
+          <li><i class="fa fa-clock-o" aria-hidden="true"></i> 7h30 - 21h30</li>
+          <li><i class="fa fa-wheelchair" aria-hidden="true"></i> Accessible aux personnes à mobilité réduite</li>
+          <li><i class="fa fa-wifi" aria-hidden="true"></i>WIFI gratuit</li>
+        </ul>
+      </div>
+
+      <!--INSA-->
+      <div class="card-index">
+        <h3>Cafet' de l'Insa</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.2238742215186!2d1.0672203154012567!3d49.38575697934267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0dfc362a1ea55%3A0x3d4c2ac7e1f8e2dc!2zQ2Fmw6l0w6lyaWEgSW5zYQ!5e0!3m2!1sen!2sfr!4v1640100918708!5m2!1sen!2sfr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>A quelques pas de plus que les Oliviers, cette cafet' ne propose pas de café "fait main" mais dispose de deux
+          machines à café automatiques bien pratiques lorsqu'on est pressé. L'espace restauration permet aussi de se
+          faire plaisir.</p>
+        <h6>Infos</h6>
+        <ul>
+          <li><i class="fa fa-clock-o" aria-hidden="true"></i>8h-20h</li>
+          <li><i class="fa fa-wifi" aria-hidden="true"></i>WIFI gratuit</li>
+        </ul>
+      </div>
+
+      <!--Chez nous :)-->
+      <div class="card-index">
+        <h3>Un petit café chez les AS ?</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2134.19604230625!2d1.4704172225781438!3d43.580572349206115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc40791e610b%3A0x44186f8c0017dff1!2sIut%20Paul%20Sabatier!5e0!3m2!1sen!2sfr!4v1640101415081!5m2!1sen!2sfr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>A défaut d'avoir, au sein même de l'IUT, une machine à café digne de ce nom, les étudiants en Année Spéciale de DUT info se sont mis en tête d'avoir leur propre cafetière. Après moulte négociation avec l'équipe pédagogique, les étudiants ont finalement eu l'autorisation d'installer la machine tant attendue au fond de la salle. Venez donc nous voir ! </p>
+      </div>
+  </section>
+
 
   <!--Footer HTML-->
   <footer class="footer">
     <div class="disc-container">
+      <h4>About</h4>
       <p id="disclaimer">Ce site a été produit à des fins éducatives et non lucratives par deux étudiants en année
         spéciale de DUT informatique.
         Pour en savoir plus sur cette formation dispensée par l’Université de Toulouse 3, vous pouvez télécharger la
@@ -47,19 +93,23 @@
     </div>
 
     <div class="logo-uni-container"><a
-      href="https://iut.univ-tlse3.fr/medias/fichier/plaquette3plisinformatiquev2m_1385991964327.pdf?ID_FICHE=317452&INLINE=FALSE"
-      target="_blank"><img src="../Images/logo-uni.png" class=img-uni alt="logo-université"></a></div>
+        href="https://iut.univ-tlse3.fr/medias/fichier/plaquette3plisinformatiquev2m_1385991964327.pdf?ID_FICHE=317452&INLINE=FALSE"
+        target="_blank"><img src="../Images/logo-uni.png" class=img-uni alt="logo-université"></a></div>
 
     <div class="contact-container">
-      <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr">
-        <h5>Olivier Gibaud</h5>
-      </a> <br>
-      <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
-        <h5>Chloé Fuchs</h5>
-      </a>
-      <div class="logo-container"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans" id="logo-footer">
+      <h4>Contact</h4>
+      <p> Olivier Gibaud <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr"><i class="fa fa-envelope"
+            aria-hidden="true"></i></a> </p>
 
-      </div>
+      <p> Chloé Fuchs <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
+          <i class="fa fa-envelope" aria-hidden="true"></i></a> </p>
+    </div>
+
+
+    </div class="logo-container-footer"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans"
+      id="logo-footer">
+
+    </div>
 
     </div>
 
