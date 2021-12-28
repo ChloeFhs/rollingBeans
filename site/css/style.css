@@ -76,12 +76,11 @@ header{
 
 
 nav{
-
-    padding-top: 0.8em;
     width: 100%;
     display: flex;
     padding-inline-end: 2em;
     justify-content: flex-end;
+    align-items: center;
 
 }
 
@@ -124,7 +123,7 @@ nav a:visited{
 
 label{
     color: #fae8e5;
-    padding-left: 1em;
+    padding-left: 0.2em;
     font-size: 2em;
     display: none;
 }
@@ -175,6 +174,11 @@ label{
         flex-direction: column;
         line-height: 2.2em;
     }
+
+    .title-img{
+        width: 80%;
+        height: auto;
+    }
 }
 
 
@@ -208,6 +212,7 @@ label{
 .card-index ul, li{
     list-style: none;
     align-self: flex-start;
+    color: #3F2E27;
 }
 
 h3{
@@ -223,26 +228,24 @@ h3{
     color:#ff622a;
     transition: transform .2s;
     padding: 1em 0 1em 0;
+    text-decoration: none;
 
 }
 
-.card-index h6 {
-    color: #ff622a;
-    padding: 1em;
-    font-size: 0.8em;
-    align-self: flex-start;
-}
+
 
 .card-index a:hover{
     transform: scale(1.1);
 }
 
-.card-index a:link{
+.card-index,#card-youtube a:link{
     text-decoration: none;
+    color: #ff622a;
 }
 
-.card-index a:visited{
+.card-index,#card-youtube a:visited{
     text-decoration: none;
+    color: #ff622a;
 }
 
 .card-index >p {
@@ -291,7 +294,7 @@ h3{
 #vidéo{
     width: 100%;
     border-radius: 10%;
-
+    border-style: hidden;
 }
 
 .list-intodiv li {
@@ -345,6 +348,7 @@ legend{
     font-style: italic;
     font-size: 0.8em;
     padding-top: 0.8em;
+    color: #3F2E27;
 
 }
 /*CSS footer */
