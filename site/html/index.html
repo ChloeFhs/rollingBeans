@@ -3,12 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="png" sizes="16x16" href="../Images/logo.png">
   <title>Accueil - Rolling Beans</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400;1,700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
@@ -18,52 +24,65 @@
         <a href="index.html" title="Retour à l'accueil"><img id="logo" src="../Images/logo.png" alt="logo"></a>
       </div>
       <nav class='nav'>
+        <label for="toggle"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <input type="checkbox" id="toggle" />
         <ul class="menu-list">
+          <li id="back-index"><a href="index.html" title="Retour à l'accueil">Accueil</a></li>
           <li><a href="spots-café.html" title="Vers les bons spots café">Spots Café</a></li>
-          <li><a href="histoire-café.html" title="Vers l'histoire du Café">Histoire du Café</a></li>
           <li><a href="café-et-santé.html" title="Vers Café et Santé">Café et Santé</a></li>
-          <li><a href="tour-du-monde.html" title="Vers le Tour du Monde du Café">Tour du Monde du Café</a></li>
+          <li><a href="histoire-café.html" title="Vers l'histoire du Café">Histoire du Café</a></li>
         </ul>
       </nav>
     </div>
     <div class='title-container'>
       <img src="../Images/TITLERB.png" alt="image de titre de Rolling Beans" class="title-img">
     </div>
+
+
   </header>
-  <div class="card-container">
+  
+  <section class="card-container">
+
+    <!--Spots café-->
     <div class="card-index">
       <a href="spots-café.html" title="Vers les bons spots café">
         <h3>Où boire un café ?</h3>
-        <div>
-          <a href="spots-café.html" title="Vers les bons spots café"><img class=" img-card"
-              src="../Images/coffee-time.png" alt="horloge dans une tasse de café">
-        </div>
-        <p>Venez découvrir tous nos bons plans pour déguster un délicieu café à Rangueil ! Ces lieux ont été testés et
-          approuvés par nos soins.</p>
-    </div></a>
+      </a>
+      <div>
+        <img class=" img-card" src="../Images/coffee-time.png" alt="horloge dans une tasse de café">
+      </div>
+      <p>Venez découvrir tous nos bons plans pour déguster un délicieu café à Rangueil ! Ces lieux ont été testés et
+        approuvés par nos soins <span><a href="spots-café.html" title="Vers les bons spots café">ici</a></span>.</p>
+    </div>
+
+    <!--Café et santé-->
     <div class="card-index"><a href="café-et-santé.html" title="Vers les bons spots café">
-        <h3>Tout savoir sur les effets du café sur la santé</h3>
+        <h3>Les effets du café sur la santé</h3></a>
         <div>
-          <a href="café-et-santé.html" title="Vers les bons spots café"><img class=" img-card"
-              src="../Images/coffee-health.png" alt="horloge dans une tasse de café">
+          <img class=" img-card"
+              src="../Images/coffee-health.png" alt="image d'une tasse de café dans une tête">
         </div>
         <p>Comme toute bonne chose, le café est à consommer avec modération. Mais, au fait, pourqoi ? Quels sont les
-          effets du café sur la santé ? Venez découvrir les réponses ici !</p>
-    </div></a>
+          effets du café sur la santé ? Venez découvrir les réponses <span><a href="café-et-santé.html" title="Vers les bons spots café">ici </a></span>!</p>
+    </div>
+
+    <!--Café dans le monde-->
     <div class="card-index">
-      <a href="tour-du-monde.html" title="Vers les bons spots café">
-        <h3>Le café, boisson multiculturelle</h3>
+      <a href="histoire-café.html" title="">
+        <h3>Le café, boisson mondiale</h3></a>
         <div>
-          <a href="tour-du-monde.html" title="Vers les bons spots café"><img class=" img-card"
-              src="../Images/coffee-world.png" alt="horloge dans une tasse de café">
+          <img class=" img-card"
+              src="../Images/coffee-world.png" alt="carte du monde dans une tasse de café">
         </div>
-        <p>Boisson mondiale et multiculturelle à la fois, le café se déguste différemment en fonction de notre emplacement sur le globe. Venez faire un petit voyage avec nous par ici !</p>
-    </div></a>
-  </div>
+        <p>Mais d'où vient cette habitude de boire du café ? Quelle est l'histoire de cette pratique mondiale ? Toutes les réponses par <span> <a href="histoire-café.html" title="Vers l'histoire du café'">là </a></span>!</p>
+    </div>
+
+  </section>
 
   <!--Footer HTML-->
   <footer class="footer">
     <div class="disc-container">
+      <h4>About</h4>
       <p id="disclaimer">Ce site a été produit à des fins éducatives et non lucratives par deux étudiants en année
         spéciale de DUT informatique.
         Pour en savoir plus sur cette formation dispensée par l’Université de Toulouse 3, vous pouvez télécharger la
@@ -76,17 +95,17 @@
         target="_blank"><img src="../Images/logo-uni.png" class=img-uni alt="logo-université"></a></div>
 
     <div class="contact-container">
-      <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr">
-        <h5>Olivier Gibaud</h5>
-      </a> <br>
-      <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
-        <h5>Chloé Fuchs</h5>
-      </a>
-      <div class="logo-container"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans" id="logo-footer">
-
-      </div>
-
+      <h4>Contact</h4>
+      <p> Chloé Fuchs <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
+        <i class="fa fa-envelope" aria-hidden="true"></i></a> </p>
+      <p> Olivier Gibaud <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr"><i class="fa fa-envelope"
+            aria-hidden="true"></i></a> </p>
     </div>
+
+
+    <div class="logo-container-footer"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans"
+      id="logo-footer"></div>
+
 
   </footer>
 
