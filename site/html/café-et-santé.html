@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Café et Santé</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="png" sizes="16x16" href="../Images/logo.png">
@@ -15,29 +16,166 @@
 </head>
 
 <body>
+
+
+  <!--Header-->
   <header class="header">
     <div class="nav-container">
       <div class='logo-container'>
         <a href="index.html" title="Retour à l'accueil"><img id="logo" src="../Images/logo.png" alt="logo"></a>
       </div>
       <nav class='nav'>
+        <label for="toggle"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <input type="checkbox" id="toggle" />
         <ul class="menu-list">
+          <li id="back-index"><a href="index.html" title="Retour à l'accueil">Accueil</a></li>
           <li><a href="spots-café.html" title="Vers les bons spots café">Spots Café</a></li>
-          <li><a href="histoire-café.html" title="Vers l'histoire du Café">Histoire du Café</a></li>
           <li><a href="café-et-santé.html" title="Vers Café et Santé">Café et Santé</a></li>
-          <li><a href="tour-du-monde.html" title="Vers le Tour du Monde du Café">Tour du Monde du Café</a></li>
+          <li><a href="histoire-café.html" title="Vers l'histoire du Café">Histoire du Café</a></li>
         </ul>
       </nav>
     </div>
     <div class='title-container'>
       <img src="../Images/TITLERB.png" alt="image de titre de Rolling Beans" class="title-img">
     </div>
+
+
   </header>
-  <div class="card-container">
-    <div class="card-index"></div>
-    <div class="card-index"></div>
-    <div class="card-index"></div>
-  </div>
+
+  <!--Contenu-->
+  <section class="card-container">
+
+    <!--Effets de la caféine-->
+    <div class="card-index">
+      <h3>Les effets de la caféine</h3>
+      <p>La <span>caféine</span> agit sur certains neurotransmetteurs excitateurs (tyrosine, dopamine) du système
+        nerveux central, ce
+        qui en fait d'elle une substance <span>stimulante</span>. Rapidement métabolisée par l'organisme, elle pénètre
+        tous les
+        tissus, y compris ceux du <span>cerveau</span>.</p>
+      <p>La quantité maximale de caféine dans le sang est atteinte environ 1h après l'ingestion. Il faudra attendre 3h
+        pour que celle-ci diminue de moitié. Par exemple, vous buvez un café après le repas de midi (13h). A 14h, vous
+        aurez la sensation «<span> d'être en forme</span> » avant de redescendre de votre piédestal aux alentours de
+        16h.</p>
+      <p>L'ingestion de caféine entre 30 et 60 minutes avant d'aller se coucher allonge le temps d'endormissement,
+        raccourcit le temps de sommeil total et donne une <span>mauvaise impression sur la qualité du sommeil</span>.
+        Elle est
+        également responsable d'une augmentation de la durée du stade II et d'une diminution de celles des stades III et
+        IV. L'intensité et la durée de ces effets sur le sommeil varient selon les personnes, en fonction de leur
+        capacité d'élimination plus ou moins rapide de la caféine.</p>
+      <details>
+        <summary>En savoir plus</summary>
+        <p>Pour en savoir plus, consultez la fiche de recommandation de l'Autorité Européenne de Sécurité des
+          Aliments<span> <a target="blank"
+              href="https://www.efsa.europa.eu/sites/default/files/corporate_publications/files/efsaexplainscaffeine150527fr.pdf">ici</a></span>.
+        </p>
+      </details>
+    </div>
+
+    <!--Conseils aux étudiants-->
+    <div class="card-index">
+      <h3>Conseils aux étudiants</h3>
+      <img class="img-card" src="../Images/molecule-cafeine.png" alt="image représentant la molécule de caféine">
+
+      <div class="list-intodiv">
+        <ul>
+          <li>La consommation <span>modérée</span> de café (3 tasses maximum/jour) apporte des
+            bénéfices à l'organisme, notamment en aidant à lutter contre la fatigue.
+          </li>
+          <li>Il n'est pas conseillé de dépasser cette dose journalière.</li>
+          <li>Il existe de nombreux produits contenant de la caféine, attention à ne pas les
+            <span>associer abusivement</span>.
+          </li>
+          <li>L'association caféine-nicotine (traditionnel « <span>café-clope</span> » de certains
+            étudiants), outre les effets très néfastes du tabac, a des propriétés laxatives.
+            La seule solution est donc de ne pas fumer </li>
+          <li>Optez pour une <span>bonne</span> hygiène de sommeil !</li>
+      </div>
+      </ul>
+
+    </div>
+
+    <!--Tableau sur les sources de caféine-->
+    <div class="card-index">
+      <h3>Où se cache la caféine ?</h3>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Sources de caféine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="colname">
+            <td>Aliments</td>
+            <td>Teneur en caféine (mg)</td>
+          </tr>
+          <tr class="cat-tab">
+            <td>Une tasse de café</td>
+          </tr>
+          <tr>
+            <td>Filtre</td>
+            <td>179</td>
+          </tr>
+          <tr>
+            <td>Percolateur automatique</td>
+            <td>118</td>
+          </tr>
+          <tr>
+            <td>Instantané</td>
+            <td>76-106</td>
+          </tr>
+          <tr>
+            <td>Expresso</td>
+            <td>40</td>
+          </tr>
+          <tr class="cat-tab">
+            <td>Une tasse de thé</td>
+          </tr>
+          <tr>
+            <td>Mélange régulier</td>
+            <td>43</td>
+          </tr>
+          <tr>
+            <td>Vert</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>En feuille ou sachet</td>
+            <td>50</td>
+          </tr>
+          <tr class="cat-tab">
+            <td>Boissons</td>
+          </tr>
+          <tr>
+            <td>Cola (355ml)</td>
+            <td>36-46</td>
+          </tr>
+          <tr>
+            <td>Boisson énergisante</td>
+            <td>0-130</td>
+          </tr>
+          <tr class="cat-tab">
+            <td>Chocolat</td>
+          </tr>
+          <tr>
+            <td>Chocolat Chaud</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>45g de chocolat noir</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>Gâteau au chocolat (80g)</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+      <legend>Source : <a href="https://www.extenso.org/article/cafeine/">extenso.org</a></legend>
+    </div>
+  </section>
+
+
   <!--Footer HTML-->
   <footer class="footer">
     <div class="disc-container">
@@ -55,18 +193,16 @@
 
     <div class="contact-container">
       <h4>Contact</h4>
-        <p> Olivier Gibaud <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr"><i class="fa fa-envelope" aria-hidden="true"></i></a>  </p>
-
-        <p> Chloé Fuchs  <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
-          <i class="fa fa-envelope" aria-hidden="true"></i></a>  </p>
+      <p> Chloé Fuchs <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
+          <i class="fa fa-envelope" aria-hidden="true"></i></a> </p>
+      <p> Olivier Gibaud <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr"><i class="fa fa-envelope"
+            aria-hidden="true"></i></a> </p>
     </div>
 
-    
-    </div class="logo-container"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans" id="logo-footer">
 
-      </div>
+    <div class="logo-container-footer"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans"
+        id="logo-footer"></div>
 
-    </div>
 
   </footer>
 

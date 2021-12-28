@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Histoire du Café</title>
-  <link rel="icon" type="png" sizes="16x16" href="../Images/logo.png">
+  <link rel="icon" sizes="16x16" href="../Images/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,29 +16,57 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="nav-container">
       <div class='logo-container'>
         <a href="index.html" title="Retour à l'accueil"><img id="logo" src="../Images/logo.png" alt="logo"></a>
       </div>
       <nav class='nav'>
+        <label for="toggle"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <input type="checkbox" id="toggle" />
         <ul class="menu-list">
+          <li id="back-index"><a href="index.html" title="Retour à l'accueil">Accueil</a></li>
           <li><a href="spots-café.html" title="Vers les bons spots café">Spots Café</a></li>
-          <li><a href="histoire-café.html" title="Vers l'histoire du Café">Histoire du Café</a></li>
           <li><a href="café-et-santé.html" title="Vers Café et Santé">Café et Santé</a></li>
-          <li><a href="tour-du-monde.html" title="Vers le Tour du Monde du Café">Tour du Monde du Café</a></li>
+          <li><a href="histoire-café.html" title="Vers l'histoire du Café">Histoire du Café</a></li>
         </ul>
       </nav>
     </div>
     <div class='title-container'>
       <img src="../Images/TITLERB.png" alt="image de titre de Rolling Beans" class="title-img">
     </div>
+
+
   </header>
-  <div class="card-container">
-    <div class="card-index"></div>
-    <div class="card-index"></div>
-    <div class="card-index"></div>
+
+
+  <section class="card-container">
+      <!--Vidéo C'est Pas Sorcier-->
+  <div id="card-youtube">
+    <h3>Une vidéo vaut mieux que 1000 mots ... </h3>      
+      <iframe id="vidéo" width="560" height="315" src="https://www.youtube.com/embed/B2NYNEPC6VA" title="YouTube video player"  allowfullscreen></iframe>
   </div>
+
+  <!--Résumé-->
+  <div id="card-sum-up">
+    <h3>En résumé... </h3>
+    <div class="list-intodiv">
+    <ul>
+      <li>Le café est consommé pour la première fois sur le continent africain, en Ethiopie, aux alentours du XIIe siècle.</li>
+      <li>Les peuples arabes diffusent la consommation au Proche Orient et dans la Péninsule Arabique.</li>
+      <li>Le café arrive en Europe au XVIIe siècle.</li>
+      <li>Les peuples arabes ne vendent que des grains grillés qui ne peuvent être replantés. Ils gardent ainsi le monopole sur la production.</li> 
+      <li>1658 : les hollandais dérobent des plants et les replantent en Indonésie. Les Anglais font pareil et plantent en Inde.</li>
+      <li>Les Hollandais offrent aux Français deux plants. Ces plants sont replantés aux Antilles.</li>
+      <li>Les Espagnols et les Portugais subtilisent une poignée de grains et plantent dans toute l’Amérique Centrale.</li>
+      <li>Au XIXe siècle, la production s’étend à toute l’Afrique. </li>
+      <li>Aujourd’hui, le café est cultivé dans toute la zone intertropicaledu globe.</li>
+    </div>
+    </div>
+
+
+</section>
 
   <!--Footer HTML-->
   <footer class="footer">
@@ -56,18 +85,16 @@
 
     <div class="contact-container">
       <h4>Contact</h4>
-        <p> Olivier Gibaud <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr"><i class="fa fa-envelope" aria-hidden="true"></i></a>  </p>
-
-        <p> Chloé Fuchs  <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
-          <i class="fa fa-envelope" aria-hidden="true"></i></a>  </p>
+      <p> Chloé Fuchs <a class="mailto" href="mailto:chloe.fuchus@etu.iut-tlse3.fr">
+        <i class="fa fa-envelope" aria-hidden="true"></i></a> </p>
+      <p> Olivier Gibaud <a class="mailto" href="mailto:olivier.gibaud@etu.iut-tlse3.fr"><i class="fa fa-envelope"
+            aria-hidden="true"></i></a> </p>
     </div>
 
-    
-    <div class="logo-container-footer"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans" id="logo-footer">
 
-      </div>
+    <div class="logo-container-footer"><img src="../Images/logo-footer.png" alt="logo de Rolling Beans"
+      id="logo-footer"></div>
 
-    </div>
 
   </footer>
 
