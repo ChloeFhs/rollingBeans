@@ -23,12 +23,14 @@ span {
 details{
     font-size: 1em;
     color:#3F2E27;
-
+    cursor:pointer;
 
 }
 
+
 details[open]{
-    text-align: center;
+   text-align: center;
+   cursor:auto;
 }
 
 details[open]>p {
@@ -198,7 +200,7 @@ label{
 
 .card-index{
     display: flex;
-    padding: 1.2em;
+    padding: 2.2em;
     height: auto;
     width: 30%;
     border-radius: 10%;
@@ -267,7 +269,7 @@ h3{
 }
 #card-sum-up{
     display: flex;
-    padding: 1.2em;
+    padding: 2.2em;
     height: auto;
     width: 60%;
     border-radius: 10%;
