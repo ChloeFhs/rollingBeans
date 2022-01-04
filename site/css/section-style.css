@@ -1,3 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    color:#3F2E27;
+}
+
+span {
+    color: #ff622a;
+    font-weight: 700 ;
+}
+
+details{
+    font-size: 1em;
+    color:#3F2E27;
+    cursor:pointer;
+}
+
+
+details[open]{
+   text-align: center;
+   cursor:auto;
+}
+
+details[open]>p {
+    font-size: 0.8em;
+    font-style: italic;
+    padding-top: 0.5em;
+}
+
+.legend{
+    font-style: italic;
+    font-size: 0.8em;
+    padding-top: 0.8em;
+    color: #3F2E27;
+
+}
+
 .card-container{
     padding: 3em;
     display:flex ; 
@@ -40,10 +88,7 @@ h3{
     transition: transform .2s;
     padding: 1em 0 1em 0;
     text-decoration: none;
-
 }
-
-
 
 .card-index a:hover{
     transform: scale(1.1);
@@ -63,7 +108,6 @@ h3{
     padding: 0.6em 0 0 0 ;
 }
 
-
 .img-card{
     padding: 1.5em;
     max-width: 14em;
@@ -76,6 +120,7 @@ h3{
     max-height: 20em;
     border-radius: 10%;
 }
+
 #card-sum-up{
     display: flex;
     padding: 2.2em;
@@ -118,12 +163,15 @@ h3{
     width: 100%;
 }
 
+/*CSS TABLE*/
+
 table{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color:#3F2E27;
     line-height: 1.5em;
 }
+
 th{
     text-align: center;
     padding:0.5em;
@@ -140,25 +188,5 @@ tr.cat-tab{
     font-weight: 700 ;
 }
 
-@media screen and (max-width: 800px){
-    .card-container{
-        flex-direction: column;
-        display:flex ; 
-        width: 100%;
-        flex-flow: wrap;
-        justify-content: space-around;
-        padding: 1.2em 0.5em 1.2em 0.5em;
-    }
-    .card-index, #card-youtube, #card-sum-up{
-        width: 100%;
-        margin-bottom: 3em;
-    }
-}
 
-.legend{
-    font-style: italic;
-    font-size: 0.8em;
-    padding-top: 0.8em;
-    color: #3F2E27;
 
-}

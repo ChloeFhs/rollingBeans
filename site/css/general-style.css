@@ -1,44 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    margin: 0;
-}
-
-p {
-    font-size: 1em;
-    color:#3F2E27;
-}
-
-span {
-    color: #ff622a;
-    font-weight: 700 ;
-}
-
-details{
-    font-size: 1em;
-    color:#3F2E27;
-    cursor:pointer;
-
-}
-
-
-details[open]{
-   text-align: center;
-   cursor:auto;
-}
-
-details[open]>p {
-    font-size: 0.8em;
-    font-style: italic;
-    padding-top: 0.5em;
-}
-
 /*CSS Header */
 header{
     font-family: 'Roboto Condensed' , sans-serif;
@@ -52,13 +11,13 @@ header{
 .nav-media{
     display: none;
 }
+
 .nav-container{
     position: fixed;
     display: flex;
     width: 100%;
     background-color: #FF9A75;
-    padding-top: 0.2em;
-    
+    padding-top: 0.2em; 
 }
 
 .logo-container{
@@ -83,7 +42,6 @@ nav{
     padding-inline-end: 2em;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 #back-index{
@@ -110,13 +68,11 @@ nav a:visited{
     color: #ffe6d5ff;
     padding-left: 1em;
     transition: transform .2s;
-
 }
 
 
 .menu-list li:hover{
     transform:scale(1.1);
-
 }
 
 #toggle{
@@ -140,51 +96,12 @@ label{
     justify-content: center;
     background-color: #FF9A75;
     width: 100%;
-
 }
 
 .title-img{
     height: 250px; 
     width: auto;
 }
-
-        /*CSS header media phone*/
-@media screen and (max-width: 800px){
-    label{
-        display: flex;
-        align-self: flex-start;
-
-    }
-    .logo-container{
-        display: none;
-    }
-
-    .menu-list{
-        display: none;
-    }
-
-    .menu-list li{
-        display: flex;
-    }
-
-    nav{
-        justify-content: flex-start;
-    }
-
-    #toggle:checked + .menu-list, #back-index{
-        display: flex;
-        flex-direction: column;
-        line-height: 2.2em;
-    }
-
-    .title-img{
-        width: 80%;
-        height: auto;
-    }
-}
-
-
-
 
 
 /*CSS footer */
@@ -260,12 +177,10 @@ footer{
     display: flex;
     align-self: center;
     margin-bottom: 1.2em;
-
 }
 
 #logo-footer{
     width: 5em;
-
 }
 
 .logo-uni-container{
@@ -284,22 +199,3 @@ footer{
 
 }
 
-/* FOOTER MEDIA CCSS */
-@media screen and (max-width: 800px){
-    footer{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .disc-container{
-        display: none;
-    }
-    .logo-uni-container{
-        align-self: center;
-        margin: 1.2em;
-    }
-    .contact-container{
-    align-self: center;
-    align-items: center;
-    }
-}
