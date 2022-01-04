@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    color:#3F2E27;
+}
+
+span {
+    color: #ff622a;
+    font-weight: 700 ;
+}
+
+details{
+    font-size: 1em;
+    color:#3F2E27;
+    cursor:pointer;
+
+}
+
+
+details[open]{
+   text-align: center;
+   cursor:auto;
+}
+
+details[open]>p {
+    font-size: 0.8em;
+    font-style: italic;
+    padding-top: 0.5em;
+}
+
+/*CSS Header */
+header{
+    font-family: 'Roboto Condensed' , sans-serif;
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.nav-media{
+    display: none;
+}
+.nav-container{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: #FF9A75;
+    padding-top: 0.2em;
+    
+}
+
+.logo-container{
+    padding-left: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    height: 2.2em;
+    transition: transform .5s ease-in-out;
+}
+
+#logo:hover {
+    transform: rotate(1080deg);
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    padding-inline-end: 2em;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#back-index{
+    display: none;
+}
+nav a:link {
+    color:#ffe6d5ff !important;
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: #ffe6d5ff;
+    text-decoration: none;
+}
+
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list li  {
+    text-decoration: none;
+    color: #ffe6d5ff;
+    padding-left: 1em;
+    transition: transform .2s;
+
+}
+
+
+.menu-list li:hover{
+    transform:scale(1.1);
+
+}
+
+#toggle{
+    display: none;
+}
+
+label{
+    color: #fae8e5;
+    padding-left: 0.2em;
+    font-size: 2em;
+    display: none;
+}
+
+        /*Image du titre*/
+.title-container{
+    display: flex;
+    padding-top: 4em;
+    padding-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: #FF9A75;
+    width: 100%;
+
+}
+
+.title-img{
+    height: 250px; 
+    width: auto;
+}
+
+        /*CSS header media phone*/
+@media screen and (max-width: 800px){
+    label{
+        display: flex;
+        align-self: flex-start;
+
+    }
+    .logo-container{
+        display: none;
+    }
+
+    .menu-list{
+        display: none;
+    }
+
+    .menu-list li{
+        display: flex;
+    }
+
+    nav{
+        justify-content: flex-start;
+    }
+
+    #toggle:checked + .menu-list, #back-index{
+        display: flex;
+        flex-direction: column;
+        line-height: 2.2em;
+    }
+
+    .title-img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+
+
+
+/*CSS footer */
+footer{
+    display: inline-flex;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../Images/footer-bg.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.disc-container{
+    display: flex;
+    padding: 1.5em;
+    height: 90%;
+    border-radius: 10%;
+    flex-flow: column wrap;
+    width: 40%;
+    text-align: justify;
+}  
+
+ h4,p .disc-container{
+    color: #ffe6d5ff;
+}
+
+#disclaimer{
+    text-align: justify;
+    color: #ffe6d5ff;
+    font-size: small;
+}
+
+.contact-container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-weight: 400;
+    align-items:center;
+}  
+
+.contact-container p, h4{
+    color: #ffe6d5ff;
+    margin-bottom: 0.5em;
+}
+
+.mailto{
+    text-align: center;
+    color:#ffe6d5ff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: transform .3s;  
+}
+
+.mailto :hover{
+    transform: scale(1.1);
+}
+
+.mailto a:link{
+    color:#fae8e5;
+    text-decoration: none;
+}
+
+.mailto a:visited{
+    color: #ffe6d5ff; 
+    text-decoration: none;
+}
+
+.logo-container-footer{
+    display: flex;
+    align-self: center;
+    margin-bottom: 1.2em;
+
+}
+
+#logo-footer{
+    width: 5em;
+
+}
+
+.logo-uni-container{
+    display: flex;
+    align-self: center;
+}
+
+.img-uni{
+
+    width: 5em;
+    border-radius: 10%;
+}
+
+.footer-media{
+    display: none;
+
+}
+
+/* FOOTER MEDIA CCSS */
+@media screen and (max-width: 800px){
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .disc-container{
+        display: none;
+    }
+    .logo-uni-container{
+        align-self: center;
+        margin: 1.2em;
+    }
+    .contact-container{
+    align-self: center;
+    align-items: center;
+    }
+}
