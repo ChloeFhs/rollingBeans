@@ -1,0 +1,70 @@
+/*CSS header media phone*/
+@media screen and (max-width: 800px){
+    label{
+        display: flex;
+        align-self: flex-start;
+
+    }
+    .logo-container{
+        display: none;
+    }
+
+    .menu-list{
+        display: none;
+    }
+
+    .menu-list li{
+        display: flex;
+    }
+
+    nav{
+        justify-content: flex-start;
+    }
+
+    #toggle:checked + .menu-list, #back-index{
+        display: flex;
+        flex-direction: column;
+        line-height: 2.2em;
+    }
+
+    .title-img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+/*CSS Body media phone */
+@media screen and (max-width: 800px){
+    .card-container{
+        flex-direction: column;
+        display:flex ; 
+        width: 100%;
+        flex-flow: wrap;
+        justify-content: space-around;
+        padding: 1.2em 0.5em 1.2em 0.5em;
+    }
+    .card-index, #card-youtube, #card-sum-up{
+        width: 100%;
+        margin-bottom: 3em;
+    }
+}
+
+/* FOOTER MEDIA CCSS */
+@media screen and (max-width: 800px){
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .disc-container{
+        display: none;
+    }
+    .logo-uni-container{
+        align-self: center;
+        margin: 1.2em;
+    }
+    .contact-container{
+    align-self: center;
+    align-items: center;
+    }
+}
