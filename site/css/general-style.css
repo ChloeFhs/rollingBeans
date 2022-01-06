@@ -112,7 +112,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     background-color:#FF9A75 ;
-    padding: 3em; 
+    padding: 2em 3em 0.1em 3em; 
 }
 
 footer a:link {
@@ -133,14 +133,12 @@ footer a:visited{
     text-align: justify;
 }  
 
- h4,p .disc-container{
-    color: #ffe6d5ff;
-}
 
-.about{
+footer p, h4{
     text-align: justify;
     color: #ffe6d5ff;
     font-size: medium;
+    margin-bottom: 1em;
 }
 
 .contact-container{
@@ -150,10 +148,10 @@ footer a:visited{
     font-weight: 400;
     align-items:center;
 }  
-
-.contact-container p, h4{
-    color: #ffe6d5ff;
-    margin-bottom: 1em;
+.footer-container{
+    display: flex;
+    justify-content: center;
+    width: 25%;
 }
 
 .mailto{
@@ -178,24 +176,11 @@ footer a:visited{
     text-decoration: none;
 }
 
-.logo-container-footer{
-    display: flex;
-    justify-content: center;
-    width: 25%;
-}
-
 #logo-footer{
     width: 7em;
 }
 
-.logo-uni-container{
-    display: flex;
-    justify-content: center;
-    width: 25%;
-}
-
 .img-uni{
-
     width: 7em;
     border-radius: 10%;
 }
