@@ -111,20 +111,25 @@ footer{
     font-family: 'Roboto', sans-serif;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url("../Images/footer-bg.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-color:#FF9A75 ;
+    padding: 3em; 
+}
+
+footer a:link {
+    color:#ffe6d5ff !important;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+footer a:visited{
+    color: #ffe6d5ff;
+    text-decoration: none;
 }
 
 .disc-container{
     display: flex;
-    padding: 1.5em;
-    height: 90%;
-    border-radius: 10%;
     flex-flow: column wrap;
-    width: 40%;
+    width: 25%;
     text-align: justify;
 }  
 
@@ -132,23 +137,23 @@ footer{
     color: #ffe6d5ff;
 }
 
-#disclaimer{
+.about{
     text-align: justify;
     color: #ffe6d5ff;
-    font-size: small;
+    font-size: medium;
 }
 
 .contact-container{
     display: flex;
     flex-flow: column wrap;
-    width: 40%;
+    width: 25%;
     font-weight: 400;
     align-items:center;
 }  
 
 .contact-container p, h4{
     color: #ffe6d5ff;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .mailto{
@@ -175,22 +180,23 @@ footer{
 
 .logo-container-footer{
     display: flex;
-    align-self: center;
-    margin-bottom: 1.2em;
+    justify-content: center;
+    width: 25%;
 }
 
 #logo-footer{
-    width: 5em;
+    width: 7em;
 }
 
 .logo-uni-container{
     display: flex;
-    align-self: center;
+    justify-content: center;
+    width: 25%;
 }
 
 .img-uni{
 
-    width: 5em;
+    width: 7em;
     border-radius: 10%;
 }
 
