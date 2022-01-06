@@ -66,5 +66,6 @@
     .contact-container{
     align-self: center;
     align-items: center;
+    width: auto;
     }
 }
