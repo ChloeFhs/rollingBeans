@@ -138,6 +138,8 @@ h3{
     align-items: center;
     flex-flow: column;
     text-align: justify;
+    box-shadow: 5px 5px 15px 1px rgba(63,46,39,0.39);
+
 }
 
 #card-youtube{
@@ -151,6 +153,8 @@ h3{
     align-items: center;
     flex-flow: column;
     text-align: justify;
+    box-shadow: 5px 5px 15px 1px rgba(63,46,39,0.39);
+
 }
 
 #vidéo{
